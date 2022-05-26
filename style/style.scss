@@ -1,0 +1,567 @@
+/* ОБЩИЕ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+main {
+    margin: 1 1 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ШАПКА */
+.main-header {
+    height: 839px;
+    margin-bottom: 65px;
+}
+
+.navigation {
+    height: 75px;
+    background: #222222
+}
+
+.panel_navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel {
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navileft {
+    width: 111px;
+    height: 38px;
+    position: relative;
+}
+
+.naviright {
+    width: 168px;
+    height: 37px;
+}
+
+.line_search {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    margin-left: 121px;
+    margin-bottom: 5px;
+    opacity: 0;
+}
+
+.navileft:hover .line_search {
+    opacity: 1;
+}
+
+.searchinput {
+    height: 15px;
+    font-size: 14px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F1E4E6;
+    border-radius: 45px;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.main-item:focus~.sub-menu,
+.main-item:active~.sub-menu,
+.sub-menu:hover {
+    display: block;
+}
+
+.menu_link:hover {
+    color: #F16D7F
+}
+
+.banner {
+    height: 764px;
+    background: #F1E4E6;
+    margin-bottom: 65px;
+}
+
+.label {
+    display: flex;
+}
+
+.label_image {
+    height: 764px;
+    width: 800px;
+    margin-left: -225px;
+}
+
+.label_txt {
+    font-family: 'Lato';
+    margin-top: 290px;
+    margin-left: 60px;
+    border-left: 12px solid #F16D7F;
+    height: 100%;
+}
+
+.banner_H1 {
+    font-size: 48px;
+    line-height: 58px;
+    margin-left: 16px;
+}
+
+.banner_txt {
+    font-size: 32px;
+    margin-left: 16px;
+}
+
+/* НАПОЛНЕНИЕ # ВЕРХНИЙ КОНТЕНТ */
+
+.clothes {
+    width: 1140px;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.block {
+    width: 360px;
+    height: 260px;
+}
+
+.link-block-women {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.img_women {
+    background-image: url(images/img_women.png);
+}
+
+.txt_for_women {
+    position: absolute;
+    margin: -160px 103px
+}
+
+.txt_content_1 {
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.txt_content_2 {
+    font-family: 'Lato';
+    font-size: 24px;
+    line-height: 19px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.txt_content_2:hover {
+    font-family: 'Lato';
+    font-size: 24px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.link-block-men {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.img_men {
+    background-image: url(images/img_men.png);
+}
+
+.txt_for_men {
+    position: absolute;
+    margin: -160px 124px
+}
+
+.link-block-kid {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.img_kid {
+
+    background-image: url(images/img_kid.png);
+}
+
+.txt_for_kid {
+    position: absolute;
+    margin: -160px 120px
+}
+
+.link-block-accessories {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.accessories {
+    width: 1140px;
+    height: 180px;
+    display: flex;
+    background-image: url(images/img_accessories.png);
+}
+
+.txt_for_accessories {
+    position: absolute;
+    margin: 65px 486px
+}
+
+.catalog {
+    margin-bottom: 96px;
+}
+
+/* НАПОЛНЕНИЕ # НИЖНИЙ КОНТЕНТ */
+
+.Fetured {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.content_txt {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+}
+
+.item-sec {
+    margin-bottom: 95px;
+}
+
+.item-link {
+    display: block;
+    text-decoration: none;
+}
+
+.item-pic {
+    width: 100%;
+}
+
+.txt-box {
+    margin-left: 18px;
+}
+
+.item-h5 {
+    font-family: 'Lato';
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.item-desc {
+    margin-bottom: 18px;
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #5D5D5D;
+    text-transform: uppercase;
+}
+
+.item-price {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #F16D7F;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.item-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.item {
+    width: 360px;
+    background: #F8F8F8;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.item:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+}
+
+.item-pic {
+    width: 100%;
+}
+
+.item:hover .item-pic {
+    filter: brightness(30%);
+}
+
+.add {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    border: 1px solid #fff;
+    text-decoration: none;
+    pointer-events: auto;
+}
+
+.add-box {
+    display: none;
+    position: absolute;
+    top: 188px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.add-desc {
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 12px;
+}
+
+.add:hover {
+    box-shadow: 0 0 10px #FFF;
+}
+
+.item:hover .add-box {
+    display: flex;
+}
+
+.all-product {
+    width: 211px;
+    height: 47px;
+    border: 1px solid #FF6A6A;
+    margin-top: 18px;
+    margin-left: 464px;
+}
+
+.browse {
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.link-all-product {
+    display: block;
+    text-decoration: none;
+}
+
+.link-all-product:hover .all-product {
+    background-color: #F16D7F;
+}
+
+.link-all-product:hover .browse {
+    color: #FFFFFF;
+}
+
+/*ПОДВАЛ*/
+
+.footer_top {
+    height: 341px;
+    background: #222224;
+}
+
+.footer_main {
+    height: 448px;
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.footer_bottom {
+    height: 79px;
+    background: #222224;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-icon-block {
+    margin-top: 104px;
+    width: 360px;
+}
+
+.footer-head-txt {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-family: 'Lato';
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.footer-txt {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    opacity: 40%;
+}
+
+.icon-footer {
+    color: #F16D7F;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    background-image: url(images/bcg-footer.jpg);
+
+}
+
+.footer-banner {
+    text-align: center;
+}
+
+.face {
+    margin-top: 97px;
+}
+
+.footer-banner-txt {
+    font-family: 'Lato';
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 30px;
+
+}
+
+.subscribe {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.subscribe-txt {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+form {
+    position: relative;
+    width: 356px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.feedback {
+    margin-top: 32px;
+}
+
+.feedback input {
+    width: 256px;
+    height: 49px;
+    background: #E1E1E1;
+    border: none;
+    border-radius: 45px 0 0 45px;
+}
+
+.input-email {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    padding-left: 22px;
+}
+
+.feedback button {
+    width: 100px;
+    height: 49px;
+    background-color:
+        #F16D7F;
+    border: none;
+    border-radius: 0 45px 45px 0;
+}
+
+.btn-subscribe {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.btn-subscribe:hover {
+    border: 2px solid #F16D7F;
+    background-color: #F8F8F8;
+    color: #F16D7F;
+}
+
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    opacity: 40%;
+    margin-top: 30px;
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+}
+
+.social-icon {
+    color: #FFF;
+    margin-right: 8px;
+}
