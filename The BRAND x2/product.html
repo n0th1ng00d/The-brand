@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The BRAND</title>
+    <title>PRODUCT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,8 @@
 </head>
 
 <body>
-
     <div class="wrapper">
-        <!--ШАПКА-->
-        <header class="main-header">
-
+        <header class="catalog-header">
             <!--ПАНЕЛЬ НАВИГАЦИИ-->
             <nav class="navigation">
                 <div class="panel_navigation container">
@@ -68,129 +65,80 @@
                 </div>
             </nav>
             <!--БАННЕР-->
-            <aside class="banner">
-                <div class="label container">
-                    <div class="label_image"><img src="images/Layer_57-removebg-preview 1.png" alt="label_img"></div>
-
-                    <div class="label_txt text-focus-in">
-                        <h1 class="banner_H1">THE BRAND</h1>
-                        <p class="banner_txt">OF LUXIROUS <span style="color:#F16D7F;">FASHION</span></p>
-                    </div>
+            <aside class="NEW-ARRIVALS">
+                <div class="container arrivals-menu">
+                    <h1>NEW ARRIVALS</h1>
+                    <p> <a href="index.html">HOME</a> / <a href="catalog.html">MEN</a> / <a href="#"
+                            style="color:#F16D7F;">NEW
+                            ARRIVALS</a></p>
                 </div>
             </aside>
         </header>
-        <main>
-            <!--Контент #1-->
-            <section class="catalog">
-                <div class="categories container">
-                    <div class="clothes">
-                        <a href="catalog.html" class="link-block-women">
-                            <div class="block women"><img src="images/background_content_1.png" alt="women"
-                                    class="img_women">
-                                <div class="txt_for_women">
-                                    <p class="txt_content_1">30% OFF</p>
-                                    <p class="txt_content_2">FOR WOMEN</p>
-                                </div>
-                            </div>
-                        </a>
+        <main class="product-main">
+            <section class="item-carousel">
+                <a href="#" class="pg"><i class="fa-solid fa-angle-left"></i></a>
+                <div class="container img-carousel">
+                    <img src="images/product-carousel-1.jpg" alt="item">
+                </div>
+                <a href="" class="pg"><i class="fa-solid fa-angle-right"></i></a>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="item-info">
+                        <h5>WOMEN COLLECTION</h5>
+                        <div class="border"></div>
+                        <h3>MOSCHINO CHEAP AND CHIC</h3>
+                        <p>Compellingly actualize fully researched processes before proactive outsourcing.
+                            <br>Progressively
+                            syndicate collaborative architectures before cutting-edge services. Completely</br>
+                            visualize
+                            parallel core competencies rather than exceptional portals.
+                        </p>
+                        <h2>$561</h2>
+                        <div class="border-2"></div>
+                        <div class="details-info">
+                            <details class="CHOOSE_COLOR det-list">
+                                <summary>CHOOSE COLOR</summary>
+                                <label for="color-red">
 
-                        <a href="catalog.html" class="link-block-men">
-                            <div class="block men"><img src="images/background_content_1.png" alt="men" class="img_men">
-                                <div class="txt_for_men">
-                                    <p class="txt_content_1">HOT DEAL</p>
-                                    <p class="txt_content_2">FOR MEN</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="catalog.html" class="link-block-kid">
-                            <div class="block kid"> <img src="images/background_content_1.png" alt="kid"
-                                    class="img_kid">
-                                <div class="txt_for_kid">
-                                    <p class="txt_content_1">NEW ARRIVALS</p>
-                                    <p class="txt_content_2">FOR KIDS</p>
-                                </div>
+                                    <input class="all-color" id="color-black" type="checkbox"> Black</label>
+                                <label for="color-white">
+                                    <input class="all-color" id="color-white" type="checkbox"> White</label>
+                                <label for="color-gray">
+                                    <input class="all-color" id="color-gray" type="checkbox"> Gray</label>
+                            </details>
+                            </details>
+                            <details class="CHOOSE_SIZE det-list">
+                                <summary>CHOOSE SIZE</summary>
+                                <label for="Size-XS">
+                                    <input class="all-size" id="Size-XS" type="checkbox"> XS</label>
+                                <label for="Size-S">
+                                    <input class="all-size" id="Size-S" type="checkbox"> S</label>
+                                <label for="Size-M">
+                                    <input class="all-size" id="Size-M" type="checkbox"> M</label>
+                                <label for="Size-L">
+                                    <input class="all-size" id="Size-L" type="checkbox"> L</label>
+                            </details>
+                            <details class="QUANTITY det-list">
+                                <summary>QUANTITY</summary>
+                                <br>
+                                <form oninput="result.value=(range.value)" action="#">
+                                    <input id="range" type="range" value="0" step="1" /></br>
+                                    <br><output name="result" for="range">0</output></br>
+                                </form>
+                            </details>
+                        </div>
+                        <a href="#" class="link-add-product">
+                            <div class="add-product">
+                                <p><i class="fa-solid fa-basket-shopping fa-xl"></i> Add to Cart</p>
                             </div>
                         </a>
                     </div>
-
-
-
-                    <a href="catalog.html" class="link-block-accessories">
-                        <div class="accessories"> <img src="images/background_accessories.png" alt="accessories"
-                                class="img_accessories">
-                            <div class="txt_for_accessories">
-                                <p class="txt_content_1">LUXIROUS & TRENDY</p>
-                                <p class="txt_content_2">ACCESORIES</p>
-                            </div>
-                        </div>
-                    </a>
                 </div>
-
             </section>
-            <!--Контент #2-->
-            <section class="item-sec">
+            <section class="item-product">
                 <div class="container">
-                    <h3 class="Fetured">Fetured Items</h3>
-                    <p class="content_txt">Shop for items based on what we featured in this week</p>
-
                     <div class="item-flex">
-                        <div class="item">
-                            <a href="product.html" class="item-link">
-                                <img class="item-pic" src="images/product 1.jpg" alt="product">
-                                <div class="txt-box">
-                                    <h5 class="item-h5">ELLERY X M'O CAPSULE</h5>
-                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
-                                        Australian
-                                        arbiter
-                                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                                    <p class="item-price">$52.00</p>
-                                </div>
-                                <div class="add-box">
-                                    <a href="#" class="add">
-                                        <img src="images/button/basket.svg">
-                                        <p class="add-desc">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="product.html" class="item-link">
-                                <img class="item-pic" src="images/product 2.jpg" alt="product">
-                                <div class="txt-box">
-                                    <h5 class="item-h5">ELLERY X M'O CAPSULE</h5>
-                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
-                                        Australian
-                                        arbiter
-                                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                                    <p class="item-price">$52.00</p>
-                                </div>
-                                <div class="add-box">
-                                    <a href="#" class="add">
-                                        <img src="images/button/basket.svg">
-                                        <p class="add-desc">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="product.html" class="item-link">
-                                <img class="item-pic" src="images/product 3.jpg" alt="product">
-                                <div class="txt-box">
-                                    <h5 class="item-h5">ELLERY X M'O CAPSULE</h5>
-                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
-                                        Australian
-                                        arbiter
-                                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                                    <p class="item-price">$52.00</p>
-                                </div>
-                                <div class="add-box">
-                                    <a href="product.html" class="add">
-                                        <img src="images/button/basket.svg">
-                                        <p class="add-desc">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
                         <div class="item">
                             <a href="product.html" class="item-link">
                                 <img class="item-pic" src="images/product 4.jpg" alt="product">
@@ -212,7 +160,7 @@
                         </div>
                         <div class="item">
                             <a href="product.html" class="item-link">
-                                <img class="item-pic" src="images/product 5.jpg" alt="product">
+                                <img class="item-pic" src="images/product 3.jpg" alt="product">
                                 <div class="txt-box">
                                     <h5 class="item-h5">ELLERY X M'O CAPSULE</h5>
                                     <p class="item-desc">Known for her sculptural takes on traditional tailoring,
@@ -249,14 +197,8 @@
                             </a>
                         </div>
                     </div>
-                    <a href="catalog.html" class="link-all-product">
-                        <div class="all-product">
-                            <p class="browse">Browse All Product</p>
-                        </div>
-                    </a>
                 </div>
             </section>
-
         </main>
         <footer class="all-footer">
             <div class="footer_top">
@@ -329,7 +271,6 @@
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>
