@@ -625,7 +625,7 @@ main
     -ms-flex-pack: justify
     justify-content: space-between
 
-    & h1
+    & h3
         font-family: $font-family
         font-style: normal
         font-weight: 400
@@ -934,7 +934,7 @@ a:hover
         font-size: 16px
         line-height: 19px
         margin-top: 0
-        background-color: #fffff
+
     & i
         padding: 14px
     & a
@@ -943,8 +943,213 @@ a:hover
 .link-add-product:hover p
     color: #ffffff
     background-color: $color
-    border: 1px solid #fffff
 
 .item-product
     margin-top: 666px
     margin-bottom: 128px
+
+.shopping_cart
+    font-family: $font-family
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    color: #F16D7F
+
+.cart-form
+    display: flex
+    justify-content: space-between
+.item-block-1
+    height: 306px
+    width: 652px
+    background: #FFFFFF
+    display: flex
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2)
+    margin-top: 96px
+    margin-bottom: 40px
+    & img
+        height: 100%
+    & h3
+        padding: 22px 0 36px 32px
+        font-family: $font-family
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 29px
+        color: #222222
+    & p
+        padding: 6px 0 6px 32px
+        font-family: $font-family
+        font-style: normal
+        font-weight: 400
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+    & input
+        height: 24px
+        width: 43px
+        text-align: center
+        font-size: 18px
+        border: 1px solid #EAEAEA
+        font-family: $font-family
+    & button
+        height: 18px
+        width: 18px
+        border: none
+        margin: 28px 0 0 612px
+        position: absolute
+        z-index: 1
+        color: #222222
+        background: #FFFFFF
+.close:hover
+    color: $color
+
+.item-block-2
+    height: 306px
+    width: 652px
+    background: #FFFFFF
+    display: flex
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2)
+    margin-bottom: 72px
+    & img
+        height: 100%
+    & h3
+        padding: 22px 0 36px 32px
+        font-family: $font-family
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 29px
+        color: #222222
+    & p
+        padding: 6px 0 6px 32px
+        font-family: $font-family
+        font-style: normal
+        font-weight: 400
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+    & input
+        height: 24px
+        width: 43px
+        text-align: center
+        font-size: 18px
+        border: 1px solid #EAEAEA
+        font-family: $font-family
+    & button
+        height: 18px
+        width: 18px
+        border: none
+        margin: 28px 0 0 612px
+        position: absolute
+        z-index: 1
+        color: #222222
+        background: #FFFFFF
+.close:hover
+    color: $color
+.btn-box
+    display: flex
+    justify-content: space-between
+
+    & button
+        padding: 16px 40px
+        margin-bottom: 128px
+        border: 1px solid rgba(164, 164, 164, 1)
+        background-color: #FFFFFF
+        font-family: $font-family
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    & button:hover
+        background-color: $color
+        color: #FFFFFF
+
+.cart-shiping
+    width: 50%
+    margin-left: 129px
+
+    & h5
+        font-family: $font-family
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        margin-top: 55px
+
+    & input
+        width: 360px
+        height: 45px
+        border: 1px solid #A4A4A4
+        background: #FFFFFF
+        outline: 0
+        padding: 0 0 0 17px
+        margin: 20px 0
+        font-family: $font-family
+        font-style: normal
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #222222
+
+    & .quote
+        padding: 10px 15px
+        border: 1px solid #A4A4A4
+        background: #FFFFFF
+        font-family: $font-family
+        font-style: normal
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        width: 30%
+
+    & .quote:hover
+        background-color: $color
+        color: #FFFFFF
+
+.grand-total
+    width: 360px
+    height: 214px
+    background: #F5F3F3
+    margin-top: 57px
+    text-align: right
+    padding: 0 34px
+
+    & p
+        padding-top: 39px
+        font-family: $font-family
+        font-style: normal
+        font-weight: 400
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+
+    & h4
+        font-family: $font-family
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        padding: 12px 0 21px 0
+    .proceed
+        text-align: center
+
+    & button
+        background-color: $color
+        font-family: $font-family
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        padding: 15px 42px
+        margin-top: 32px
+        border: none
+    & button:hover
+        border: 1px solid $color
+        background-color: #FFFFFF
+        color: $color

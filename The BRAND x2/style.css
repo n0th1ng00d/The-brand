@@ -725,7 +725,7 @@ main {
   justify-content: space-between;
 }
 
-.arrivals-menu h1 {
+.arrivals-menu h3 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -1115,7 +1115,6 @@ a:hover {
   font-size: 16px;
   line-height: 19px;
   margin-top: 0;
-  background-color: #fffff;
 }
 
 .add-product i {
@@ -1129,11 +1128,277 @@ a:hover {
 .link-add-product:hover p {
   color: #ffffff;
   background-color: #F16D7F;
-  border: 1px solid #fffff;
 }
 
 .item-product {
   margin-top: 666px;
   margin-bottom: 128px;
+}
+
+.shopping_cart {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.cart-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-block-1 {
+  height: 306px;
+  width: 652px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  margin-top: 96px;
+  margin-bottom: 40px;
+}
+
+.item-block-1 img {
+  height: 100%;
+}
+
+.item-block-1 h3 {
+  padding: 22px 0 36px 32px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+
+.item-block-1 p {
+  padding: 6px 0 6px 32px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.item-block-1 input {
+  height: 24px;
+  width: 43px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #EAEAEA;
+  font-family: "Lato";
+}
+
+.item-block-1 button {
+  height: 18px;
+  width: 18px;
+  border: none;
+  margin: 28px 0 0 612px;
+  position: absolute;
+  z-index: 1;
+  color: #222222;
+  background: #FFFFFF;
+}
+
+.close:hover {
+  color: #F16D7F;
+}
+
+.item-block-2 {
+  height: 306px;
+  width: 652px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  margin-bottom: 72px;
+}
+
+.item-block-2 img {
+  height: 100%;
+}
+
+.item-block-2 h3 {
+  padding: 22px 0 36px 32px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+
+.item-block-2 p {
+  padding: 6px 0 6px 32px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.item-block-2 input {
+  height: 24px;
+  width: 43px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #EAEAEA;
+  font-family: "Lato";
+}
+
+.item-block-2 button {
+  height: 18px;
+  width: 18px;
+  border: none;
+  margin: 28px 0 0 612px;
+  position: absolute;
+  z-index: 1;
+  color: #222222;
+  background: #FFFFFF;
+}
+
+.close:hover {
+  color: #F16D7F;
+}
+
+.btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-box button {
+  padding: 16px 40px;
+  margin-bottom: 128px;
+  border: 1px solid #a4a4a4;
+  background-color: #FFFFFF;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.btn-box button:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+
+.cart-shiping {
+  width: 50%;
+  margin-left: 129px;
+}
+
+.cart-shiping h5 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 55px;
+}
+
+.cart-shiping input {
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+  outline: 0;
+  padding: 0 0 0 17px;
+  margin: 20px 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.cart-shiping .quote {
+  padding: 10px 15px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  width: 30%;
+}
+
+.cart-shiping .quote:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+
+.grand-total {
+  width: 360px;
+  height: 214px;
+  background: #F5F3F3;
+  margin-top: 57px;
+  text-align: right;
+  padding: 0 34px;
+}
+
+.grand-total p {
+  padding-top: 39px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+
+.grand-total h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding: 12px 0 21px 0;
+}
+
+.grand-total .proceed {
+  text-align: center;
+}
+
+.grand-total button {
+  background-color: #F16D7F;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 15px 42px;
+  margin-top: 32px;
+  border: none;
+}
+
+.grand-total button:hover {
+  border: 1px solid #F16D7F;
+  background-color: #FFFFFF;
+  color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
