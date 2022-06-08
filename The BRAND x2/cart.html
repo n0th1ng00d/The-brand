@@ -114,10 +114,11 @@
                 <form class="cart-shiping">
                     <h5>SHIPPING ADRESS</h5>
                     <input class="country" id="country" placeholder="Bangladesh" autofocus="" required=""
-                        pattern="\S+[А-яа-я]">
-                    <input class="state" id="state" placeholder="State" autofocus="" required="" pattern="\S+[А-яа-я]">
+                        pattern="\S+[A-Za-zА-Яа-яЁё]">
+                    <input class="state" id="state" placeholder="State" autofocus="" required=""
+                        pattern="\S+[A-Za-zА-Яа-яЁё]">
                     <input class="postcode" id="postcode" placeholder="Postcode / Zip" autofocus="" required=""
-                        pattern="\S+[А-яа-я]">
+                        pattern="^[ 0-9]+$">
                     <input class="quote" type="submit" value="GET A QUOTE"></input>
 
 

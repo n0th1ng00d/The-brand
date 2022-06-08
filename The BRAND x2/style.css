@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1400,5 +1401,166 @@ a:hover {
   border: 1px solid #F16D7F;
   background-color: #FFFFFF;
   color: #F16D7F;
+}
+
+.reg-banner {
+  background: #F8F3F4;
+}
+
+.REGISTRATION {
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.REGISTRATION h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.reg-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration-input {
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.registration-input input {
+  width: 360px;
+  height: 45px;
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding-left: 17px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.registration-input .gender-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration-input .gender-select input {
+  width: 17px;
+  height: 17px;
+}
+
+.registration-input h5 {
+  margin-bottom: 10px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration-input p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration-input button {
+  width: 40%;
+  height: 50px;
+  background-color: #F16D7F;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+  padding: 0 30px;
+}
+
+.registration-input button:hover {
+  background-color: #ffffff;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
+}
+
+.registation-info {
+  width: 60%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.registation-info h4 {
+  margin-bottom: 22px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registation-info p {
+  margin-bottom: 21px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+ol {
+  list-style: none;
+}
+
+ol > li {
+  padding-left: 42px;
+  position: relative;
+  margin: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+ol > li:before {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
