@@ -2,6 +2,7 @@
 
 $font-family: 'Lato'
 $color: #F16D7F
+$backgroundcolor: #F1E4E6
 
 *
     margin: 0
@@ -24,7 +25,7 @@ main
     flex-direction: column
 
 .container
-    width: 1140px
+    max-width: 1140px
     margin: 0 auto
 
 .main-header
@@ -34,6 +35,7 @@ main
 .navigation
     height: 75px
     background: #222222
+    padding: 0 2%
 
 .panel_navigation
     display: -webkit-box
@@ -84,7 +86,7 @@ main
     font-size: 14px
     padding: 6px 0 4px 10px
     border: 1px solid #cecece
-    background: #F1E4E6
+    background: $backgroundcolor
     border-radius: 45px
 
 .main-item:focus~.sub-menu,
@@ -126,7 +128,7 @@ main
     font-weight: 400
     font-size: 14px
     line-height: 17px
-    color: #F16D7F
+    color: $color
     margin-top: 20px
     margin-bottom: 12px
     margin-left: 33px
@@ -145,7 +147,7 @@ main
 
 .banner
     height: 764px
-    background: #F1E4E6
+    background: $backgroundcolor
     margin-bottom: 65px
 
 .label
@@ -162,7 +164,7 @@ main
         font-family: $font-family
         margin-top: 290px
         margin-left: 60px
-        border-left: 12px solid #F16D7F
+        border-left: 12px solid $color
         height: 100%
 
     .banner_H1
@@ -200,97 +202,73 @@ main
     font-size: 32px
     margin-left: 16px
 
-.clothes
-    width: 1140px
-    height: 260px
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-    margin-bottom: 30px
-
-.block
-    width: 360px
-    height: 260px
-
-.link-block-women
-    display: block
-    text-decoration: none
-    position: relative
-
-.img_women
-    background-image: url(images/img_women.png)
-
-.txt_for_women
-    position: absolute
-    margin: -160px 103px
-
-.txt_content_1
-    font-family: $font-family
-    font-size: 16px
-    line-height: 27px
-    text-align: center
-    color: #FFFFFF
-
-.txt_content_2
-    font-family: $font-family
-    font-size: 24px
-    line-height: 19px
-    text-align: center
-    color: $color
-
-    &:hover
-        font-family: $font-family
-        font-size: 24px
-        line-height: 19px
-        text-align: center
-        color: #FFFFFF
-
-.link-block-men
-    display: block
-    text-decoration: none
-    position: relative
-
-.img_men
-    background-image: url(images/img_men.png)
-
-.txt_for_men
-    position: absolute
-    margin: -160px 124px
-
-.link-block-kid
-    display: block
-    position: relative
-    text-decoration: none
-
-.img_kid
-    background-image: url(images/img_kid.png)
-
-.txt_for_kid
-    position: absolute
-    margin: -160px 120px
-
-.link-block-accessories
-    display: block
-    position: relative
-    text-decoration: none
-
-.accessories
-    width: 1140px
-    height: 180px
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    background-image: url(images/img_accessories.png)
-
-.txt_for_accessories
-    position: absolute
-    margin: 65px 486px
-
-.catalog
+.content
+    display: grid
+    grid-template-columns: repeat(3, 31%)
+    grid-template-rows: 260px
+    row-gap: 6%
+    column-gap: 3%
+    justify-content: center
+    align-items: center
+    justify-items: center
+    margin-top: 65px
     margin-bottom: 96px
+
+    & item
+        position: relative
+
+        & img
+            filter: brightness(50%)
+
+        & .item-text
+            position: absolute
+            margin: -160px 103px
+
+        & .item-text-1
+            font-family: $font-family
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            text-align: center
+            color: #FFFFFF
+
+        & .item-text-2
+            font-family: $font-family
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: $color
+            &:hover
+                color: #FFFFFF
+
+    & .item-4
+        grid-column: 1/4
+
+        & .item-text2
+            position: absolute
+            margin: -113px 491px
+        & .item-text-3
+            font-family: $font-family
+            font-style: normal
+            font-weight: 400
+            font-size: 15px
+            line-height: 19px
+            text-align: center
+            color: #FFFFFF
+
+        & .item-text-4
+            font-family: $font-family
+            font-style: nowrap
+            font-weight: 700
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: $color
+            &:hover
+                color: #FFFFFF
 
 .Fetured
     text-align: center
@@ -308,111 +286,91 @@ main
     color: #9F9F9F
     margin-bottom: 48px
 
-.item-sec
-    margin-bottom: 95px
-
-.item-link
-    display: block
-    text-decoration: none
-
-.item-pic
-    width: 100%
-
-.txt-box
-    margin-left: 18px
-
-.item-h5
-    font-family: $font-family
-    margin-top: 25px
-    margin-bottom: 12px
-    font-size: 13px
-    color: #000000
-    text-transform: uppercase
-
-.item-desc
-    margin-bottom: 18px
-    font-family: $font-family
-    font-size: 14px
-    color: #5D5D5D
-    text-transform: uppercase
-
-.item-price
-    font-family: $font-family
-    font-size: 16px
-    color: $color
-    margin-bottom: 20px
-    text-transform: uppercase
-
-.item-flex
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -ms-flex-wrap: wrap
-    flex-wrap: wrap
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-
-    & .item
-        width: 360px
-        background: #F8F8F8
-        position: relative
-        margin-bottom: 30px
-
-.item:hover
-    -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
-
-.item-pic
-    width: 100%
-
-    .item:hover &
-        -webkit-filter: brightness(30%)
-        filter: brightness(30%)
-
-.add
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    padding: 8px
-    -webkit-box-align: center
-    -ms-flex-align: center
+.content-2
+    display: grid
+    grid-template-columns: repeat(3, 31%)
+    grid-template-rows: repeat(2, 50%)
+    row-gap: 2%
+    column-gap: 2%
+    justify-content: center
     align-items: center
-    border: 1px solid #fff
-    text-decoration: none
-    pointer-events: auto
+    justify-items: center
+    margin-bottom: 72px
 
-    &-box
-        display: none
-        position: absolute
-        top: 188px
-        -webkit-box-pack: center
-        -ms-flex-pack: center
-        justify-content: center
-        width: 100%
-        pointer-events: none
+    & item
+        background-color: #F8F8F8
+        position: relative
 
-    &-desc
-        font-family: $font-family
-        font-size: 14px
-        color: #FFFFFF
-        margin-left: 12px
+        &:hover
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
 
-    &:hover
-        -webkit-box-shadow: 0 0 10px #FFF
-        box-shadow: 0 0 10px #FFF
+        &:hover img
+            filter: brightness(30%)
 
-    .item:hover &-box
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
+        &:hover .add-box
+            display: flex
+
+        & a
+            text-decoration: none
+        & img
+            max-width: 100%
+
+        & .text-box
+            padding-top: 12px
+            padding-left: 18px
+
+            & h6
+                font-family: $font-family
+                font-style: normal
+                font-weight: 400
+                font-size: 13px
+                line-height: 16px
+                color: #000000
+                padding: 12px 0
+
+            & .description
+                font-family: $font-family
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #5D5D5D
+
+            & .price
+                font-family: $font-family
+                color: $color
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 19px
+                padding: 18px 0
+        & .add-box
+            position: absolute
+            margin-top: -110%
+            margin-left: 30%
+            border: 1px solid #ffffff
+            display: none
+            &:hover
+                box-shadow: 0 0 10px #fff
+
+            &:hover p
+                color: $color
+
+            & p
+                font-family: $font-family
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 17px
+                color: #FFFFFF
+                padding: 10px 13px
 
 .all-product
     width: 211px
     height: 47px
     border: 1px solid $color
-    margin-top: 18px
-    margin-left: 464px
+    margin-left: 40%
+    margin-bottom: 95px
 
 .browse
     font-family: $font-family
@@ -476,7 +434,7 @@ main
     opacity: 40%
 
 .icon-footer
-    color: #F16D7F
+    color: $color
 
 .main-footer
     display: -webkit-box
@@ -606,25 +564,95 @@ main
     color: $color
 
 .catalog-main
-    height: 2124px
+    height: 100%
 
-.NEW-ARRIVALS
-    height: 148px
-    background: #F8F3F4
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
+.content-catalog
+    display: grid
+    grid-template-columns: repeat(3, 31%)
+    grid-template-rows: repeat(3, 34%)
+    row-gap: 2%
+    column-gap: 2%
+    justify-content: center
     align-items: center
+    justify-items: center
+    margin-bottom: 152px
 
-.arrivals-menu
-    display: -webkit-box
-    display: -ms-flexbox
+    & item
+        background-color: #F8F8F8
+        position: relative
+
+        &:hover
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+        &:hover img
+            filter: brightness(30%)
+
+        &:hover .add-box
+            display: flex
+
+        & a
+            text-decoration: none
+        & img
+            max-width: 100%
+
+        & .text-box
+            padding-top: 12px
+            padding-left: 18px
+
+            & h6
+                font-family: $font-family
+                font-style: normal
+                font-weight: 400
+                font-size: 13px
+                line-height: 16px
+                color: #000000
+                padding: 12px 0
+
+            & .description
+                font-family: $font-family
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #5D5D5D
+
+            & .price
+                font-family: $font-family
+                color: $color
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 19px
+                padding: 18px 0
+        & .add-box
+            position: absolute
+            margin-top: -110%
+            margin-left: 30%
+            border: 1px solid #ffffff
+            display: none
+            &:hover
+                box-shadow: 0 0 10px #fff
+
+            &:hover p
+                color: $color
+
+            & p
+                font-family: $font-family
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 17px
+                color: #FFFFFF
+                padding: 10px 13px
+
+.arrivals-banner
+    background: #F8F3F4
+
+.new-arrivals
+    height: 148px
     display: flex
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
+    align-items: center
     justify-content: space-between
-
     & h3
         font-family: $font-family
         font-style: normal
@@ -632,7 +660,6 @@ main
         font-size: 24px
         line-height: 29px
         color: $color
-
     & a
         text-decoration: none
         font-family: $font-family
@@ -719,7 +746,7 @@ ul
     font-size: 14px
     line-height: 17px
     color: $color
-    border-left: 5px solid #EF5B70
+    border-left: 5px solid $color
     padding: 11px
     -ms-flex-line-pack: center
     align-content: center
@@ -786,7 +813,7 @@ ul
     display: flex
     align-items: center
     justify-content: center
-    margin-top: 29px
+    margin-bottom: 96px
 
     & a
         font-family: $font-family
@@ -881,6 +908,85 @@ a:hover
     & a
         text-decoration: none
 
+.content-product
+    display: grid
+    grid-template-columns: repeat(3, 31%)
+    grid-template-rows: repeat(2, 34%)
+    row-gap: 2%
+    column-gap: 2%
+    justify-content: center
+    align-items: center
+    justify-items: center
+
+    & item
+        background-color: #F8F8F8
+        position: relative
+        margin-top: 285px
+
+        &:hover
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+        &:hover img
+            filter: brightness(30%)
+
+        &:hover .add-box
+            display: flex
+
+        & a
+            text-decoration: none
+        & img
+            max-width: 100%
+
+        & .text-box
+            padding-top: 12px
+            padding-left: 18px
+
+            & h6
+                font-family: $font-family
+                font-style: normal
+                font-weight: 400
+                font-size: 13px
+                line-height: 16px
+                color: #000000
+                padding: 12px 0
+
+            & .description
+                font-family: $font-family
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #5D5D5D
+
+            & .price
+                font-family: $font-family
+                color: $color
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 19px
+                padding: 18px 0
+        & .add-box
+            position: absolute
+            margin-top: -110%
+            margin-left: 30%
+            border: 1px solid #ffffff
+            display: none
+            &:hover
+                box-shadow: 0 0 10px #fff
+
+            &:hover p
+                color: $color
+
+            & p
+                font-family: $font-family
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 17px
+                color: #FFFFFF
+                padding: 10px 13px
+
 .details-info
     display: flex
     justify-content: space-around
@@ -946,7 +1052,7 @@ a:hover
 
 .item-product
     margin-top: 666px
-    margin-bottom: 128px
+    margin-bottom: -152px
 
 .shopping_cart
     font-family: $font-family
@@ -954,7 +1060,7 @@ a:hover
     font-weight: 400
     font-size: 24px
     line-height: 29px
-    color: #F16D7F
+    color: $color
 
 .cart-form
     display: flex
@@ -1169,6 +1275,7 @@ a:hover
         font-size: 24px
         line-height: 29px
         color: $color
+
 .reg-info
     display: flex
 
