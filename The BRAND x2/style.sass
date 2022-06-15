@@ -78,6 +78,9 @@ main
     margin-bottom: 5px
     opacity: 0
 
+    & input
+        outline: none
+
     .navileft:hover &
         opacity: 1
 
@@ -159,13 +162,15 @@ main
         height: 764px
         width: 800px
         margin-left: -225px
+        max-width: 100%
 
     &_txt
         font-family: $font-family
         margin-top: 290px
-        margin-left: 60px
+        margin-left: -80px
         border-left: 12px solid $color
         height: 100%
+        max-width: 100%
 
     .banner_H1
         font-size: 48px
@@ -205,20 +210,47 @@ main
 .content
     display: grid
     grid-template-columns: repeat(3, 31%)
-    grid-template-rows: 260px
+    grid-template-rows: repeat(2, 50%)
     row-gap: 6%
     column-gap: 3%
     justify-content: center
     align-items: center
     justify-items: center
-    margin-top: 65px
     margin-bottom: 96px
+
+    .accessories
+        grid-column: 1/4
+        & .item-text2
+            position: absolute
+            margin: -113px 491px
+        & .item-text-3
+            font-family: $font-family
+            font-style: normal
+            font-weight: 400
+            font-size: 15px
+            line-height: 19px
+            text-align: center
+            color: #FFFFFF
+            white-space: nowrap
+
+        & .item-text-4
+            font-family: $font-family
+            font-style: nowrap
+            font-weight: 700
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: $color
+            white-space: nowrap
+            &:hover
+                color: #FFFFFF
 
     & item
         position: relative
 
         & img
             filter: brightness(50%)
+            max-width: 100%
 
         & .item-text
             position: absolute
@@ -232,6 +264,7 @@ main
             line-height: 19px
             text-align: center
             color: #FFFFFF
+            white-space: nowrap
 
         & .item-text-2
             font-family: $font-family
@@ -241,32 +274,7 @@ main
             line-height: 28px
             text-align: center
             color: $color
-            &:hover
-                color: #FFFFFF
-
-    & .item-4
-        grid-column: 1/4
-
-        & .item-text2
-            position: absolute
-            margin: -113px 491px
-        & .item-text-3
-            font-family: $font-family
-            font-style: normal
-            font-weight: 400
-            font-size: 15px
-            line-height: 19px
-            text-align: center
-            color: #FFFFFF
-
-        & .item-text-4
-            font-family: $font-family
-            font-style: nowrap
-            font-weight: 700
-            font-size: 24px
-            line-height: 28px
-            text-align: center
-            color: $color
+            white-space: nowrap
             &:hover
                 color: #FFFFFF
 
@@ -1384,3 +1392,204 @@ ol
             position: absolute
             top: 0
             left: 0
+
+@media (max-width: 768px)
+    .main-header
+        height: 442px
+        & .sub-menu
+            margin-left: 0
+            z-index: 1
+        & .banner
+            height: 368px
+            & .label_image
+                height: 368px
+                margin-left: 0
+                & img
+                    height: 368px
+            & .label_txt
+                margin-top: 138px
+                margin-left: -47%
+                & h1
+                    font-weight: 900
+                    font-size: 44px
+                    line-height: 53px
+                    white-space: nowrap
+                & p
+                    font-weight: 700
+                    font-size: 24px
+                    line-height: 28px
+                    white-space: nowrap
+    .catalog
+        margin-top: -31px
+        & .content
+            & item
+                & a
+                    & .item-text
+                        margin: -101px 50px
+                        & .item-text-1
+                            font-weight: 400
+                            font-size: 16px
+                            line-height: 19px
+                        & .item-text-2
+                            font-weight: 700
+                            font-size: 24px
+                            line-height: 28px
+                    & .item-text2
+                        margin: -85px 303px
+                        & .item-text-3
+                            font-weight: 400
+                            font-size: 16px
+                            line-height: 19px
+                        & .item-text-4
+                            font-weight: 700
+                            font-size: 24px
+                            line-height: 28px
+    .Fetured
+        margin-top: 51px
+    .content-2
+        grid-template-columns: repeat(2, 47%)
+        grid-template-rows: repeat(3, 32%)
+        & item
+            & .add-box
+                margin-top: -120%
+
+    .all-product
+        margin-left: 36%
+        margin-bottom: 65px
+    .footer_top
+        height: 610px
+        & .top-footer
+            display: inline-block
+            flex-wrap: wrap
+            & .footer-icon-block
+                margin-top: 50px
+                margin-left: 204px
+    .footer_main
+        height: 693px
+        background-size: 130% 60%
+        background-position: bottom
+        background-color: rgba(244, 244, 244, 1.7)
+        & .main-footer
+            display: inline-block
+            margin-left: 218px
+            & .subscribe
+                margin-top: 120px
+    .bottom-footer
+        padding: 0 2%
+
+@media (max-width: 375px)
+    .main-header
+        height: 437px
+        & .navileft
+            & .line_search
+                & input
+                    display: none
+        & .naviright
+            margin-right: -39%
+            & .btn-profile
+                display: none
+            & .btn-basket
+                display: none
+            & .menu-catalog
+                & .sub-menu
+                    margin-left: -52%
+                    z-index: 1
+        & .banner
+            height: 363px
+            & .label_image
+                height: 0
+                margin-left: 0
+                display: none
+                & img
+                    height: 363px
+            & .label_txt
+                margin-top: 148px
+                margin-left: 15%
+                & h1
+                    font-weight: 900
+                    font-size: 38px
+                    line-height: 46px
+                    white-space: nowrap
+                & p
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 24px
+                    white-space: nowrap
+    .catalog
+        margin-top: 23px
+        &     .content
+            grid-template-columns: repeat(1, 100%)
+            grid-template-rows: repeat(4, 27%)
+            row-gap: 8%
+            margin-bottom: 210px
+            & .accessories
+                grid-column: 1/1
+                & .img-accessories
+                    width: 189%
+                    margin-left: -162px
+                    margin-top: -100%
+            & item
+                & img
+                    max-width: 189%
+                & a
+                    & .item-text
+                        margin: -150px 120px
+                        & .item-text-1
+                            font-weight: 400
+                            font-size: 16px
+                            line-height: 19px
+                        & .item-text-2
+                            font-weight: 700
+                            font-size: 24px
+                            line-height: 28px
+                    & .item-text2
+                        margin: -85px 122px
+                        & .item-text-3
+                            font-weight: 400
+                            font-size: 16px
+                            line-height: 19px
+                        & .item-text-4
+                            font-weight: 700
+                            font-size: 24px
+                            line-height: 28px
+    .Fetured
+        margin-top: 51px
+    .content-2
+        grid-template-columns: repeat(1, 100%)
+        grid-template-rows: repeat(6, 15%)
+        & item
+            & .add-box
+                margin-top: -110%
+
+    .all-product
+        margin-top: -3px
+        margin-left: 23%
+        margin-bottom: 96px
+    .footer_top
+        height: 610px
+        & .top-footer
+            display: inline-block
+            flex-wrap: wrap
+            & .footer-icon-block
+                margin-top: 50px
+                margin-left: 4%
+    .footer_main
+        height: 550px
+        background-size: 165% 75%
+        background-position: bottom
+        background-color: rgba(244, 244, 244, 1.7)
+        & .main-footer
+            display: inline-block
+            margin-left: 3%
+            margin-top: -60px
+            & .subscribe
+                margin-top: 51px
+    .footer_bottom
+        height: 143px
+        & .bottom-footer
+            flex-wrap: wrap-reverse
+            & .copyright
+                margin-left: 62px
+            & .social
+                margin-top: 65px
+                margin-left: 114px
